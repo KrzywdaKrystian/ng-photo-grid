@@ -43,7 +43,7 @@ angular.module("ngApp").controller("indexCtrl", ["$scope", function($scope){
   }
 
   getSelectedSeeds = function() {
-    var photoNumbers      = $scope.rand(2, 7)
+    var photoNumbers      = 2;
     var seeds             = []
     var arr               = []
     while(arr.length < photoNumbers){

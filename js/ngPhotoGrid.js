@@ -421,7 +421,7 @@ angular.module("ngPhotoGrid")
             is2First:         is2First
           } //keep these values to style cell image after building style for cell link
         }
-      }
+      };
 
       getWidthRate = function(firstRatio, cellCount) {
         if (cellCount == 2) { //build style for 2 images
@@ -445,7 +445,21 @@ angular.module("ngPhotoGrid")
         cellCount             = scope.takenImages.length;
 
         if (cellCount == 1) { //build style for only one image
-          //@todo need implement!
+          buildedStyle = {
+              big:    angular.copy(commonStyle),
+              small:  angular.copy(commonStyle),
+              last:   angular.copy(commonStyle),
+              options:  {
+                  firstRatio:       1,
+                  // keep these value because ng style need add measured suffix
+                  smallCellWidth:   smallCellStyle.width,
+                  smallCellHeight:  smallCellStyle.height,
+                  bigCellWidth:     GRID_WIDTH,
+                  bigCellHeight:    GRID_WIDTH/2,
+                  cellCount:        1,
+                  is2First:         GRID_WIDTH
+              } //keep these values to style cell image after building style for cell link
+          };
         } else { //build style for >=2 images
           buildedStyle        = buildCellStyle(firstImage, secondImage, cellCount);
         }

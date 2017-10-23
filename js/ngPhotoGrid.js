@@ -445,6 +445,7 @@ angular.module("ngPhotoGrid")
         cellCount             = scope.takenImages.length;
 
         if (cellCount == 1) { //build style for only one image
+            var smallCellStyle          = angular.copy(commonStyle);
           buildedStyle = {
               big:    angular.copy(commonStyle),
               small:  angular.copy(commonStyle),

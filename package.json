@@ -1,0 +1,19 @@
+{
+  "name": "ng-photo-grid",
+  "version": "1.0.0",
+  "description": "Photo grid like facebook in angular js with no dependencies. Work well when images have variety in dimension, scale images but respect ratio and improve display images in cells.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrzywdaKrystian/ng-photo-grid.git"
+  },
+  "author": "https://github.com/jerryc-nguyen/ng-photo-grid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KrzywdaKrystian/ng-photo-grid/issues"
+  },
+  "homepage": "https://github.com/KrzywdaKrystian/ng-photo-grid#readme"
+}
